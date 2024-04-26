@@ -1,0 +1,24 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/pfuentes/ejercicios/C/so_long_final'
+cc    -c -o so_long.o so_long.c
+cc    -c -o get_next_line.o get_next_line.c
+cc    -c -o get_next_line_utils.o get_next_line_utils.c
+cc    -c -o utils_bonus.o utils_bonus.c
+cc    -c -o checker.o checker.c
+cc    -c -o check_functions.o check_functions.c
+cc    -c -o create_map.o create_map.c
+cc    -c -o graph.o graph.c
+cc    -c -o lst_functions.o lst_functions.c
+cc    -c -o pathfinding_utils.o pathfinding_utils.c
+cc    -c -o pathfinding.o pathfinding.c
+cc    -c -o inputs.o inputs.c
+cc    -c -o images.o images.c
+cc    -c -o images2.o images2.c
+ 
+cc    -c -o info.o info.c
+cc    -c -o draw_map.o draw_map.c
+cc    -c -o player_movement.o player_movement.c
+gcc -Wall -Werror -Wextra -c so_long.c get_next_line.c get_next_line_utils.c utils_bonus.c checker.c check_functions.c create_map.c graph.c lst_functions.c pathfinding_utils.c pathfinding.c inputs.c images.c images2.c info.c draw_map.c player_movement.c 
+gcc -Wall -Werror -Wextra -L. -lmlx -framework OpenGL -framework Appkit so_long.o get_next_line.o get_next_line_utils.o utils_bonus.o checker.o check_functions.o create_map.o graph.o lst_functions.o pathfinding_utils.o pathfinding.o inputs.o images.o images2.o info.o draw_map.o player_movement.o -o so_long
+make: Leaving directory `/Users/pfuentes/ejercicios/C/so_long_final'
+ 

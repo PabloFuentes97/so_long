@@ -6,7 +6,7 @@
 /*   By: pfuentes <pfuentes@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 13:03:09 by pfuentes          #+#    #+#             */
-/*   Updated: 2023/02/15 10:38:47 by pfuentes         ###   ########.fr       */
+/*   Updated: 2023/08/15 11:52:47 by pfuentes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,8 @@ int	main(int argc, char **argv)
 	set_mlx(&mlx);
 	draw_low_map(mlx);
 	draw_high_map(mlx);
-	mlx_key_hook(mlx.win, key_hook, &mlx);
+	mlx_hook(mlx.win, 2, 0, key_hook, &mlx);
+	//mlx_key_hook(mlx.win, key_hook, &mlx);
 	mlx_hook(mlx.win, 17, 0, exit_hook, (void *)0);
 	mlx_loop(mlx.mlx_ptr);
 	return (0);
